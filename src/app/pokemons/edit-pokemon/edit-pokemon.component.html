@@ -1,0 +1,18 @@
+<p>edit-pokemon works!</p>
+<h2 class="header center">Editer {{ pokemon?.name }}</h2>
+<p class="center">
+    <img *ngIf="pokemon" [src]="pokemon.picture" />
+</p>
+<app-pokemon-form [pokemon]="pokemon"></app-pokemon-form>
+
+
+
+
+
+<!-- Le template de ce composant aura :
+- Un titre h2 ayant les classes : header center
+- A l'interieur de la balise h2, collez ceci : Editer {{ pokemon?.name }} 
+- Une balise de couple <p> ayant la classe : center
+- A l'interieur de la balise <p>, il doit y avoir une balise <img> ne s'affichant uniquement s'il y a un pokemon avec pour source l'image du pokémon associé.
+- Pour terminer, il faudra appeler le composant pokemon-form à l'aide du selecteur <app-pokemon-form></app-pokemon-form> en lui passant en paramètre d'input le pokemon associé.  -->
+
