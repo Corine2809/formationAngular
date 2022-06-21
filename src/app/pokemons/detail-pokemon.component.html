@@ -38,10 +38,10 @@
                 <div class="card-action">
                     <a (click)="goBack()">Retour</a>
                     <a (click)="goEdit(pokemon)">Editer</a>
-                    <a (click)="goDelete(pokemon.id)">Supprimer le pokemon</a>
+                    <a (click)="goDelete(pokemon.id)">Supprimer</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<h4 *ngIf='!pokemon' class="center">Aucun pokémon à afficher !</h4>
+<h4 *ngIf='!pokemon' class="center">Aucun pokémon !</h4>
